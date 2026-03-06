@@ -1,0 +1,26 @@
+<%-include('partials/header')%>
+<div class="signup">
+    <form action="">
+        <h2>Sign Up</h2>
+        <span id="existingUser"></span>
+        <div class="signUpinputArea">
+            <label for="">User name: </label>
+            <input type="email" id="signupName">
+        </div>
+        <div class="signUpinputArea">
+            <label for="">Email: </label>
+            <input type="email" id="signupEmail">
+        </div>
+        <div class="signUpinputArea">
+            <label for="">Password: </label>
+            <input type="password" id="signupPassword">
+        </div>
+        <div class="signUpinputArea">
+            <label for="">Confirm Password: </label>
+            <input type="password" id="signupConfirmPassword">
+        </div>
+        <button id="signUpBtn">Sign Up</button>
+        <p>Already have an account? <a href="/logIn">Log In Here</a></p>
+    </form>
+</div>
+<%-include('partials/footer')%>

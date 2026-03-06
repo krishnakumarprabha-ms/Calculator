@@ -1,0 +1,74 @@
+<%-include('partials/header')%>
+<div class="container">
+    <h1>Calculator</h1>
+    <p>A calculator is an essential tool designed to simplify everyday mathematical tasks, from basic arithmetic to more advanced calculations. Whether you’re a student, professional, or someone managing daily finances, our calculator provides a fast, reliable, and user-friendly way to compute numbers with accuracy. Built with intuitive controls and a clean interface, it helps you perform calculations effortlessly—making problem-solving quicker, easier, and more efficient.</p>
+    <div class="calculator">
+        <div class="result">
+            <input id="resultArea" type="text" placeholder="0">
+        </div>
+        <div class="buttons">
+            <div class="btn1 button">
+                <button id="button1" class="but" onclick="clearValue()" style="color: red;">AC</button>
+            </div>
+            <div class="btn2 button">
+                <button id="button2" class="but" onclick="deleteValue()" style="color: yellow;">Del</button>
+            </div>
+            <div class="btn3 button">
+                <button id="button3" class="but" onclick="addValue('%')" style="color: violet;">%</button>
+            </div>
+            <div class="btn4 button">
+                <button id="button4" class="but" onclick="addValue('/')" style="color: violet;">/</button>
+            </div>
+            <div class="btn5 button">
+                <button id="button5" class="but" onclick="addValue('7')">7</button>
+            </div>
+            <div class="btn6 button">
+                <button id="button6" class="but" onclick="addValue('8')">8</button>
+            </div>
+            <div class="btn7 button">
+                <button id="button7" class="but" onclick="addValue('9')">9</button>
+            </div>
+            <div class="btn8 button">
+                <button id="button8" class="but" onclick="addValue('*')" style="color: violet;">*</button>
+            </div>
+            <div class="btn9 button">
+                <button id="button9" class="but" onclick="addValue('4')">4</button>
+            </div>
+            <div class="btn10 button">
+                <button id="button10" class="but" onclick="addValue('5')">5</button>
+            </div>
+            <div class="btn11 button">
+                <button id="button11" class="but" onclick="addValue('6')">6</button>
+            </div>
+            <div class="btn12 button">
+                <button id="button12" class="but" onclick="addValue('-')" style="color: violet;">-</button>
+            </div>
+            <div class="btn13 button">
+                <button id="button13" class="but" onclick="addValue('1')">1</button>
+            </div>
+            <div class="btn14 button">
+                <button id="button14" class="but" onclick="addValue('2')">2</button>
+            </div>
+            <div class="btn15 button">
+                <button id="button15" class="but" onclick="addValue('3')">3</button>
+            </div>
+            <div class="btn16 button">
+                <button id="button16" class="but" onclick="addValue('+')" style="color: violet;">+</button>
+            </div>
+            <div class="btn17 button">
+                <button id="button17" class="but" onclick="addValue('00')">00</button>
+            </div>
+            <div class="btn18 button">
+                <button id="button18" class="but" onclick="addValue('0')">0</button>
+            </div>
+            <div class="btn19 button">
+                <button id="button19" class="but" onclick="addValue('.')">.</button>
+            </div>
+            <div class="btn20 button">
+                <button id="button20" class="but" onclick="showResult()" style="color: green;">=</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/calculator.js"></script>
+<%-include('partials/footer')%>

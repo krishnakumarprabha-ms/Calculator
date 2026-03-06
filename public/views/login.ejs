@@ -1,0 +1,18 @@
+<%-include('partials/header')%>
+<div class="login">
+    <form action="">
+        <h2>Log In</h2>
+        <span id="errorMsg" style="color: red;"></span>
+        <div class="inputArea">
+            <label for="">Email: </label>
+            <input type="email" id="loginEmail">
+        </div>
+        <div class="inputArea">
+            <label for="">Password: </label>
+            <input type="password" id="loginPassword">
+        </div>
+        <button id="loginBtn">Login</button>
+        <p>Don't have an account? <a href="/signUp">Sign Up Here</a></p>
+    </form>
+</div>
+<%-include('partials/footer')%>
